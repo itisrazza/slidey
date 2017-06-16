@@ -1,0 +1,125 @@
+
+* { box-sizing: border-box }
+
+:root {
+    font-family: "HK Grotesk", sans-serif;
+    font-size: 14px;
+
+    background: #FAFAFA;
+    color: #212121;
+}
+
+body {
+    margin: 0;
+}
+
+body.index {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../img/background.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body.index > main {
+    min-width: 320px;
+    text-align: center;
+    padding: 0 10px;
+
+    background: url("../img/background_blur.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+body.index > footer {
+    min-width: 320px;
+    text-align: center;
+    padding: 10px 10px;
+
+    background: url("../img/background_blur.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .5);
+
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    margin: 10px 0;
+}
+
+.title, .subtitle {
+    font-style: italic;
+}
+
+a {
+    color: #8D6E63;
+    text-decoration: none;
+}
+
+.slidey-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.slidey-slide a {
+    color: #A1887F;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    background: #6D4C41;
+    color: #FAFAFA;
+    padding: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    position: relative;
+    transition: background-color .2s, box-shadow .2s;
+}
+
+.btn:hover {
+    background: #795548;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.btn:active {
+    background: #5D4037;
+}
+
+code, pre {
+    font-family: "Inconsolata", monospace;
+    font-size: 13px;
+    background: #212121;
+    color: #fafafa;
+    display: block;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.container {
+    width: 65vw;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.github-corner {
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    position: fixed;
+    top: 0; right: 0;
+}
